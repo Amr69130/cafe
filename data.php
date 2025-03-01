@@ -19,6 +19,6 @@ $cafes = [
         "id" => 3,
         "name" => "Cappuccino",
         "price" => 1.20,
-        "add_sugar" => true
+        "add_sugar" => false
     ]
 ];
