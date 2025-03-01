@@ -1,19 +1,22 @@
 <?php
 $cafes = [
 
-    "Expresso" =>    [
+    [
+        "id" => 1,
         "name" => "Expresso",
         "price" => 0.5,
         "add_sugar" => true
     ],
 
-    "Lungo" =>    [
+    [
+        "id" => 2,
         "name" => "Lungo",
         "price" => 1,
         "add_sugar" => true
     ],
 
-    "Cappuccino" =>    [
+    [
+        "id" => 3,
         "name" => "Cappuccino",
         "price" => 1.20,
         "add_sugar" => true

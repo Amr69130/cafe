@@ -12,18 +12,19 @@
     require_once('data.php');
     ?>
 
-    <form action="confirmBoisson.php" method="POST">
+    <form action="confirmBoisson.php" name="name" method="POST">
+        <select name="name">
 
-        <select name="boisson">
+            <?php foreach ($cafes as $cafe) { ?>
+                <option value="<?php echo $cafe["name"] ?>">
+                    <?php echo $cafe["name"] . " " . $cafe["price"] . " €"; ?>
+                </option>
             <?php
-            foreach ($cafes as $info) {
-                echo "<option value='{$info['name']}'>{$info['name']} - {$info['price']}€</option>";
-            }
 
-            ?>
+            } ?>
+
         </select>
         <button type="submit">VALIDER COMMANDE</button>
-
     </form>
 
 
